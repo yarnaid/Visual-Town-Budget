@@ -16,7 +16,7 @@
       $('.controls.file').append('<span class="file-input-name">Select a file</span>');
       $("#upload-button").click(function(){
         var fileName = $("#upload-file").val();
-        if(fileName === 'revenues.csv' || fileName === 'expenses.csv' || fileName === 'funds.csv'){
+        if(fileName === 'revenues.csv' || fileName === 'expenses.csv'){
 
         } else {
 
@@ -38,7 +38,7 @@
 
   <div  style="margin-left:20px; display:inline-block;">
     <div >
-      <h1> AVB Data Upload </h1>
+      <h1> Data Upload </h1>
     </div>
     <form action="update" enctype="multipart/form-data" method="post" class="form-horizontal">
       <div class="control-group">
@@ -139,10 +139,10 @@
       }
 
       // array of valid files that can be uploaded
-      $validFiles = array('revenues.csv', 'expenses.csv', 'funds.csv', 'glossary.csv');
+      $validFiles = array('revenues.csv', 'expenses.csv', 'glossary.csv');
 
       // array of files that needs to be converted to json format
-      $tojsonFiles = array('revenues.csv', 'expenses.csv', 'funds.csv');
+      $tojsonFiles = array('revenues.csv', 'expenses.csv');
 
       // return error if uploaded filename is not in valid files list
       if (in_array($filename, $validFiles)) {
@@ -164,7 +164,7 @@
          printError('Unable to replace previous data file, check permissions.');
         }
       } else {
-       printError('Valid files are "revenues.csv", "expenses.csv", "funds.csv" and "glossary.csv".');
+       printError('Valid files are "revenues.csv", "expenses.csv" and "glossary.csv".');
       }
 
       ?>

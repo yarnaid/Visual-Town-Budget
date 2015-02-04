@@ -166,13 +166,13 @@ stats = {
 decks = {
     revenues: [stats.amount, stats.growth, stats.impact, stats.mean, stats.source],
     expenses: [stats.amount,  stats.growth, stats.impact, stats.mean, stats.source],
-    funds: [stats.amount, stats.growth, stats.impact, stats.mean, stats.source]
+    // funds: [stats.amount, stats.growth, stats.impact, stats.mean, stats.source]
 },
 
 tables = {
     revenues: [stats.name, stats.growth, stats.sparkline, stats.impact, stats.amount, stats.mapLink],
     expenses: [stats.name, stats.growth, stats.sparkline, stats.impact, stats.amount, stats.mapLink],
-    funds: [stats.name, stats.growth, stats.sparkline, stats.impact, stats.amount, stats.mapLink],
+    // funds: [stats.name, stats.growth, stats.sparkline, stats.impact, stats.amount, stats.mapLink],
     search: [stats.name, stats.growth, stats.sparkline, stats.amount, stats.parent,  stats.section, stats.mapLink]
 }
 

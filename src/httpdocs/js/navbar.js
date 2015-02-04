@@ -176,7 +176,7 @@ avb.navbar = function(){
 		if(jQuery.browser.mobile) {
 			$('#navbar-map').text('Map');
 			$('#navbar-table').text('Table');
-			$('#navbar-funds').text('Funds');
+			// $('#navbar-funds').text('Funds');
 		}
 		// hide homepage when search box is selected
 		$('#searchbox').bind('click touchstart',function () {

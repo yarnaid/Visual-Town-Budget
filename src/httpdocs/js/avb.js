@@ -48,7 +48,9 @@ avb.thisYear = avb.currentYear;
 // amount of yearly taxes spent by user
 avb.userContribution = null;
 // available data sections
-avb.sections = ['revenues', 'expenses', 'funds'];
+avb.sections = ['revenues', 'expenses'
+// , 'funds'
+];
 // available modes (treemap, table..)
 avb.modes =
 {
@@ -160,6 +162,7 @@ function loadData() {
         return d.year
     });
     yearIndex = avb.thisYear - avb.firstYear;
+    yearIndex = avb.lastYear - avb.firstYear;
     avb.navbar.initialize(avb.thisYear);
 
     avb.currentNode.data = undefined;

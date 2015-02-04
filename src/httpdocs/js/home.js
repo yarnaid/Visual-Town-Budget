@@ -47,7 +47,7 @@ avb.home = function () {
         position: 'right'
     }, {
         selector: '#chart-wrap',
-        text: 'Explore how the town revenues changed over time.',
+        text: 'Explore how the university revenues changed over time.',
         position: 'right'
     }, {
         selector: '#navigation',
@@ -134,7 +134,7 @@ avb.home = function () {
     */
     var schoolTour = [{
         selector: '#school',
-        text: 'Education is an important factor in Town expenses.',
+        text: 'Education is an important factor in university expenses.',
         position: 'bottom',
         before: function () {
             $('g[nodeid="' + townSchools + '"]').find('div').first().attr('id', 'school');
@@ -162,7 +162,7 @@ avb.home = function () {
         function overlayClick(event) {
             event.stopPropagation();
             // highlight 'funds' link
-            $($('.section').get(2)).addClass('selected');
+            $($('.section').get(0)).addClass('selected');
             hide();
         }
 
@@ -317,7 +317,8 @@ avb.home = function () {
         // calculate block height scales
         var scale = d3.scale.linear().clamp(true).range([30, 160])
             .domain([0, d3.max(data, function (d) {
-                return d.values[yearIndex].val
+                console.log(d);
+                return d.values[yearIndex].val;
             })]);
 
         // renuves animation
@@ -330,11 +331,11 @@ avb.home = function () {
             height: scale(data[1].values[yearIndex].val)
         }, duration)
             .find('.node-value').text(formatcurrency(data[1].values[yearIndex].val));
-        // funds animation
-        $('#funds-node').animate({
-            height: scale(data[2].values[yearIndex].val)
-        }, duration)
-            .find('.node-value').text(formatcurrency(data[2].values[yearIndex].val));
+        // // funds animation
+        // $('#funds-node').animate({
+        //     height: scale(data[2].values[yearIndex].val)
+        // }, duration)
+        //     .find('.node-value').text(formatcurrency(data[2].values[yearIndex].val));
         $('.node-value').fadeIn(duration);
 
         // hook up click actions
@@ -370,7 +371,7 @@ avb.home = function () {
 
         // start application
         initializeVisualizations({
-            "section": "funds"
+            "section": "revenues"
         });
         
         // do not highlight any sections while homepage is open
