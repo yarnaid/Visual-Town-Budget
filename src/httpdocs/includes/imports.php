@@ -1,5 +1,6 @@
 <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
 <link href="/css/lib/bootstrap/bootstrap.css" rel="stylesheet">
+<link href="/css/lib/nv.d3/nv.d3.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/lib/intro/introjs.min.css">
 <link rel="stylesheet" type="text/css" href="/css/global.css">
 <link rel="stylesheet" media="print" type="text/css" href="/css/print.css">
@@ -9,6 +10,7 @@
 
 <script type="text/javascript" src="/js/lib/mustache/mustache.js"></script>
 <script type="text/javascript" src ="/js/lib/d3/d3.v3.min.js"></script>
+<script type="text/javascript" src ="/js/lib/nv.d3/nv.d3.min.js"></script>
 <script type="text/javascript" src ="/js/lib/jquery/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src ="/js/lib/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src ="/js/lib/detectmobilebrowser/detectmobilebrowser.js"></script>
@@ -22,6 +24,7 @@
 <script type="text/javascript" src ="/js/statistics.js"></script>
 <script type="text/javascript" src ="/js/home.js"></script>
 <script type="text/javascript" src ="/js/avb.js"></script>
+<script type="text/javascript" src ="/js/years_chart.js"></script>
 
 <!-- Minified js -->
 
