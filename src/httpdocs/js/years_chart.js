@@ -45,7 +45,7 @@ function stream_index(d, i) {
 
 
 // MAIN FUNCTION!
-d3.json('/data/mpu-years/mpu-years.json', function(error, data){
+d3.json('/data/mpu-years/mpu-1-years.json', function(error, data){
   nv.addGraph(function() {
     var chart = nv.models.stackedAreaChart()
                   .x(function(d) { return d[0] })
