@@ -317,7 +317,6 @@ avb.home = function () {
         // calculate block height scales
         var scale = d3.scale.linear().clamp(true).range([30, 160])
             .domain([0, d3.max(data, function (d) {
-                console.log(d);
                 return d.values[yearIndex].val;
             })]);
 

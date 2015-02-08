@@ -8,4 +8,9 @@
 			}
 		?>
 	</div>
+    <div class="row-fluid" style="width:auto;">
+        <?php
+            require_once 'includes/years_chart.php'
+        ?>
+    </div>
 </div>
