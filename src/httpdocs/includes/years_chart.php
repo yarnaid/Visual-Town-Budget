@@ -23,7 +23,7 @@
             </div>
         </div>
         <div>
-            <h3>15 MPU Data over 1977-2013 (Summury)</h3>
+            <h3>15 MPU Data over 1977-2013 (Summary)</h3>
             <div id="sum-years-selector" data-toggle="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
             </div>
             <div id="sum-years-chart">
