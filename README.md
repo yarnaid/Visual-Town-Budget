@@ -1,3 +1,9 @@
+# WARNING
+Following description is outdated.
+
+Forked from goinvo/Visual-Town-Budget.
+
+
 Budget Visualization Framework
 ========
 ![screenshot](https://raw.github.com/goinvo/Visual-Town-Budget/develop/docs/img/example_screenshot.png)
