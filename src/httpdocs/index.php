@@ -33,7 +33,6 @@
       // require_once "includes/footer.php";
       require_once 'includes/templates.php';
       require_once "includes/datafiles.php";
-      // require_once 'includes/years_chart.php';
     ?>
 
     <script>
